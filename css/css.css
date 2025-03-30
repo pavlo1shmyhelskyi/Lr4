@@ -426,8 +426,8 @@ header {
 
 /* Анімація для секції .main-hero */
 .main-hero {
-  opacity: 0; /* Спочатку текст буде прозорим */
-  transform: translateX(100%); /* Початкове положення тексту - за межами справа */
+  opacity: 0; /* прозориість */
+  transform: translateX(100%); 
   animation: slideInRight 3.5s forwards; /* Анімація для виліту справа */
 }
 .hero-image img {
@@ -437,13 +437,6 @@ header {
 .hero-image img[src="img/invincible.png"]:hover {
   transform: scale(1.1); /* Збільшуємо зображення при наведенні */
   filter: brightness(0.9); /* Зменшуємо яскравість зображення при наведенні */
-}
-.hero-text img {
-  transition: transform 0.5s ease;
-}
-
-.hero-text img[src="img/Spotify.png"]:hover {
-  transform: rotate(360deg); /* Обертання зображення на 360 градусів */
 }
 .hero-text img {
   transition: transform 0.5s ease;
