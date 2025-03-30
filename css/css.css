@@ -438,3 +438,17 @@ header {
   transform: scale(1.1); /* Збільшуємо зображення при наведенні */
   filter: brightness(0.9); /* Зменшуємо яскравість зображення при наведенні */
 }
+.hero-text img {
+  transition: transform 0.5s ease;
+}
+
+.hero-text img[src="img/Spotify.png"]:hover {
+  transform: rotate(360deg); /* Обертання зображення на 360 градусів */
+}
+.hero-text img {
+  transition: transform 0.5s ease;
+}
+
+.hero-text img[src="img/Spotify.png"]:hover {
+  transform: rotate(360deg); /* Обертання зображення на 360 градусів */
+}
