@@ -1,0 +1,141 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #2D3A43;
+}
+
+header {
+  padding: 20px 0;
+  background-color: rgba(45, 58, 67, 0.8);
+  border-bottom: 1px solid #F11940;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #FEDB7F;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #F11940;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.hero .hero-content {
+  max-width: 600px;
+  flex: 1;
+  order: 1;
+}
+
+.hero .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #FEDB7F;
+  margin-bottom: 20px;
+  font-family: 'Chaotic Connection', sans-serif;
+}
+
+.hero .hero-content p {
+  font-size: 1.4rem;
+  color: rgba(254, 219, 127, 0.9);
+}
+
+.hero .hero-content .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #C11738, #F11940);
+  color: #FEDB7F;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(241, 25, 64, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .hero-content .btn:hover {
+  background: linear-gradient(135deg, #F11940, #FF3B5E);
+  box-shadow: 0 6px 15px rgba(241, 25, 64, 0.6);
+  transform: scale(1.05);
+}
+
+.hero .hero-image {
+  flex: 1;
+  text-align: center;
+  order: 2;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: #FEDB7F;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Chaotic Connection', sans-serif;
+}
+
+.nav-links a:hover {
+  color: #C11738;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 10%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
